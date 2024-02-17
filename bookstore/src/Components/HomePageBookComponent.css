@@ -1,0 +1,11 @@
+.cardImgHov
+{
+    transition: transform 1s;
+    overflow: hidden;
+}
+
+
+.cardImgHov:hover{
+    transform: scale(1.1)
+}
+
