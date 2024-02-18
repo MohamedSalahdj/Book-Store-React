@@ -92,9 +92,9 @@ p {
   margin: 25px 0;
 }
 
-.btn {
+.btn1 {
   display: inline-block;
-  background-color: #ff523b;
+  background-color: #1B6445;
   color: #fff;
   padding: 8px 30px;
   margin: 30px 0;
@@ -102,7 +102,7 @@ p {
   transition: background-color 0.5s;
 }
 
-.btn:hover {
+.btn1:hover {
   background-color: #563434;
 }
 
