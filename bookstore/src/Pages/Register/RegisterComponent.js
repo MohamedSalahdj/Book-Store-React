@@ -8,7 +8,8 @@ function RegitserComponent(){
         lastName : "",
         email : "",
         password : "",
-        mobileNumber : ""
+        mobileNumber : "",
+        certificate : ""
     })   
 
     const [registerFormErrors, setRegisterFormErrors] = useState({
@@ -17,7 +18,9 @@ function RegitserComponent(){
         emailError : "",
         userNameError : "",
         passwordError1 : "",
-        passwordError2 : ""
+        passwordError2 : "",
+        mobileNumberError : "",
+        certificateError : ""
     })
 
     const [passwordType, setPasswordType] = useState("password")
@@ -119,7 +122,7 @@ return (
     </div>
     <div className="container mb-5">
         <div className="col-lg-6 col-md-10 col-sm-10 p-4 mt-2 mx-auto border bg-white rounded">
-            <form >
+            <form method="POST">
             {/* Names */}
             <div className="d-flex justify-content-between">
                 {/* First Name */}
@@ -184,6 +187,17 @@ return (
                 <MessageErrorComponent classErrorMessage={registerFormErrors.passwordError2 == "password don't match" ? "danger" : "success"} messageError={registerFormErrors.passwordError2} />
             </div>
 
+            {/* Crtificate of user is a puplisher */}
+            {userType.userType == 'publisher' &&
+                <div className="mb-3">
+                        <label for="formFileSm" class="form-label">Upload Certificate</label>
+                        <input className="form-control form-control-sm" id="formFileSm" type="file" name='certificate'
+                        onChange={(e)=> changeFormData(e)}
+                        />
+                    </div> 
+            }
+            
+            
             <button type="submit" className="btn btn-success w-100 btn-form">Register</button>
             
             <div className="mt-3 ">
