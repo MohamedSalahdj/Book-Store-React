@@ -38,7 +38,7 @@ function ClientSelectComponent(){
             <div className='d-flex justify-content-center'>
                 {userType == '' ? <p className='btn btn-success mt-3 disabled'>Create Account</p> : <Link to={`/Register/${userType}`} className='btn btn-success mt-3'>Join as a {userType}</Link> }
             </div>
-            <p className="text-center mt-2"> Already have an account? <Link  className='text-success' to='#' >Log In</Link></p>
+            <p className="text-center mt-2"> Already have an account? <Link  className='text-success' to='/login' >Log In</Link></p>
         </>
     )
 }
