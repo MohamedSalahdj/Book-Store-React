@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import My_Rating from "./Components/My_Rating"
+import { Route, Router, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
