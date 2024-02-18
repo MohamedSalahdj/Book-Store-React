@@ -1,5 +1,4 @@
 import { useEffect, useState, useTransition } from "react"
-import { AxiosInstance } from "../../Network/AxiosInstance"
 import headerImg from '../../Images/pexels-stanislav-kondratiev-2908984.jpg'
 
 import './HomePage.css'
