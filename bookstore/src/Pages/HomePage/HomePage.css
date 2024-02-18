@@ -7,13 +7,14 @@
     height: 95vh;
 }
 .HomeBackground{
-    height: 90vh;
+    height: 100vh;
     /* background-image: url('../../Images/pexels-stanislav-kondratiev-2908984.jpg'); */
     background-image: url('https://canvastemplate.com/demos/writer/images/hero/hero.jpg');
     /* transform: translate(10px, 10px); */
     background-position: center;
     background-size: cover;
-    transition: transform .5s;
+    transition: transform .3s;
+    top: -1%;
 
 }
 .homeBackgroundImage{
