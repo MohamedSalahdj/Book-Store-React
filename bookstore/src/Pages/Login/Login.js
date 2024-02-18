@@ -141,19 +141,37 @@ function Login() {
                 </div>
                 <div className="d-grid">
                   <button
+<<<<<<< HEAD
                     className="btn btn-primary btn-login text-uppercase fw-bold"
+=======
+                    className="btn btn-success btn-login text-uppercase fw-bold"
+>>>>>>> main
                     type="submit"
                   >
                     Sign in
                   </button>
                   <hr className="my-4" />
 
+<<<<<<< HEAD
                   <div className="mt-3 ">
                     <p className="text-center">
                       <pre> Create a new account ? </pre>
                       <Link to="/Sign up">Sign up</Link>
                     </p>
                   </div>
+=======
+                  <div className="mt-3 text-center">
+  <p>
+    <span style={{ fontSize: '1.2em', marginRight: '8px' }}>
+      Create a new account?
+    </span>
+    <Link to="/signup" className="btn btn-success btn-sm">
+      Sign up
+    </Link>
+  </p>
+</div>
+
+>>>>>>> main
                 </div>
               </div>
             </div>
@@ -164,4 +182,8 @@ function Login() {
   );
 }
 
+<<<<<<< HEAD
 export default Login;
+=======
+export default Login;
+>>>>>>> main
