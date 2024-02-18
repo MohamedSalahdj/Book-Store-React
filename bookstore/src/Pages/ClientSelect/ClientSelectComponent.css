@@ -34,4 +34,5 @@ h2 {
 
 .user-type .select-icon:checked {
     border-color: var(--main-border-color);
+    background-color: var(--main-background);
 }
