@@ -1,0 +1,34 @@
+
+.myContainer{
+    height: 100vh;
+}
+
+.Herocontainer{
+    height: 95vh;
+}
+.HomeBackground{
+    height: 100vh;
+    /* background-image: url('../../Images/pexels-stanislav-kondratiev-2908984.jpg'); */
+    background-image: url('https://canvastemplate.com/demos/writer/images/hero/hero.jpg');
+    /* transform: translate(10px, 10px); */
+    background-position: center;
+    background-size: cover;
+    transition: transform .3s;
+    top: -1%;
+
+}
+.homeBackgroundImage{
+    overflow: hidden;
+    height: 60vh;
+    width: 100vh;
+    scale: 1.1;
+}
+.latestBooks{
+    height: 50vh;
+    top: 25%;
+    left: -20%;
+}
+.HeroTitle{
+    top: 100%;
+    
+}
