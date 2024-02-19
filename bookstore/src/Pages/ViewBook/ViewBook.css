@@ -8,33 +8,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-nav {
-  flex: 1;
-  text-align: right;
-  margin-top: -10px;
-}
-
-nav ul {
-  display: inline-block;
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #555;
-}
-
 p {
   color: #555;
 }
@@ -92,7 +65,7 @@ p {
   margin: 25px 0;
 }
 
-.btn {
+.btn1 {
   display: inline-block;
   background-color: #ff523b;
   color: #fff;
@@ -102,7 +75,7 @@ p {
   transition: background-color 0.5s;
 }
 
-.btn:hover {
+.btn1:hover {
   background-color: #563434;
 }
 
@@ -187,138 +160,6 @@ col-4 p {
 
 .rating .fa {
   color: #ff523b;
-}
-
-.offer {
-  background: radial-gradient(#fff, #ffd6d6);
-  margin-top: 80px;
-  padding: 30px 0;
-}
-
-.col-2 .offer-img {
-  padding: 50px;
-  width: 85%;
-}
-
-.brands {
-  margin: 100px auto;
-}
-
-.col-5 {
-  width: 160px;
-}
-
-.col-5 img {
-  width: 100%;
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-
-.col-5 img:hover {
-  filter: grayscale(0);
-}
-
-.footer {
-  background-color: #000;
-  color: #8a8a8a;
-  font-size: 14px;
-  padding: 60px 0 20px;
-}
-
-.footer p {
-  color: #8a8a8a;
-}
-
-.footer h3 {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.footer-col-1,
-.footer-col-2,
-.footer-col-3,
-.footer-col-4 {
-  min-width: 250px;
-  margin-bottom: 20px;
-}
-
-.footer-col-1 {
-  flex-basis: 30%;
-}
-
-.footer-col-2 {
-  flex: 1;
-  text-align: center;
-}
-
-.footer-col-2 img {
-  width: 180px;
-  margin-bottom: 20px;
-}
-
-.footer-col-3,
-.footer-col-4 {
-  flex-basis: 15%;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.app-logo {
-  margin-top: 20px;
-}
-
-.app-logo img {
-  width: 140px;
-}
-
-.footer hr {
-  border: none;
-  background-color: #b5b5b5;
-  height: 1px;
-  margin: 20px 0;
-}
-
-.copyright {
-  text-align: center;
-}
-
-.menu-icon {
-  width: 28px;
-  margin-left: 20px;
-  display: none;
-}
-
-/* Media Query for Toggle Menu */
-@media only screen and (max-width: 800px) {
-  nav ul {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background-color: #333;
-    width: 100%;
-    overflow: hidden;
-    transition: max-height 0.5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  nav ul li a {
-    color: #fff;
-  }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
 }
 
 /* Media Query for less than 600px */
@@ -461,50 +302,6 @@ input:focus {
   cursor: pointer;
 }
 
-/* ------ Card items ------------ */
-.card-page {
-  margin: 80px auto;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.card-info {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-th {
-  text-align: left;
-  padding: 5px;
-  color: #fff;
-  background: #ff523b;
-  font-weight: normal;
-}
-
-td {
-  padding: 10px 5px;
-}
-
-td input {
-  width: 40px;
-  height: 30px;
-  padding: 5px;
-}
-
-td a {
-  color: #ff523b;
-  font-size: 12px;
-}
-
-td img {
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
-}
-
 .total-price {
   display: flex;
   justify-content: flex-end;
@@ -514,81 +311,6 @@ td img {
   border-top: 3px solid #ff523b;
   width: 100%;
   max-width: 360px;
-}
-
-td:last-child,
-th:last-child {
-  text-align: right;
-}
-
-/* account page */
-.account-page {
-  padding: 50px 0;
-  background: radial-gradient(#fff, #ffd6d6);
-}
-
-.form-container {
-  background-color: #fff;
-  width: 300px;
-  height: 400px;
-  position: relative;
-  text-align: center;
-  padding: 20px 0;
-  margin: auto;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
-  overflow: hidden;
-}
-
-.form-container span {
-  font-weight: bold;
-  padding: 0 10px;
-  color: #555;
-  cursor: pointer;
-  width: 100px;
-  display: inline-block;
-}
-
-.form-btn {
-  display: inline-block;
-}
-
-.form-container form {
-  max-width: 300px;
-  padding: 0 20px;
-  position: absolute;
-  top: 130px;
-  transition: transform 1s;
-}
-
-form input {
-  width: 100%;
-  height: 30px;
-  margin: 10px 0;
-  padding: 0 10px;
-  border: 1px solid #ccc;
-}
-
-form .btn {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  margin: 10px 0;
-}
-
-form .btn:focus {
-  outline: none;
-}
-
-form a {
-  font-size: 12px;
-}
-
-#LoginForm {
-  left: -300px;
-}
-
-#RegForm {
-  left: 0;
 }
 
 #indicator {
