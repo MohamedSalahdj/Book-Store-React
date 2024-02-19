@@ -12,9 +12,9 @@ function HomePage() {
     })
 
     function handlePosition(e) {
-        const deltaX = ((e.clientX - window.innerWidth / 2 - 100) / 100) * 2
-        const deltaY = ((e.clientY - window.innerHeight / 2 - 100) / 100) * 2
-        const deltaXCheck = (deltaX < 0 ) ? ((deltaX < -10) ? -10 : deltaX) : ((deltaX > 10) ? 10  : deltaX)
+        const deltaX = ((e.clientX - window.innerWidth / 2 - 100) / 100) * 1
+        const deltaY = ((e.clientY - window.innerHeight / 2 - 100) / 100) * 1
+        const deltaXCheck = (deltaX < 0 ) ? ((deltaX < -10) ? -10 : deltaX) : 0 
         const deltaYCheck = (deltaY < 0 ) ? ((deltaY < -10) ? -10 : deltaY) : ((deltaY > 10) ? 10  : deltaY)
 
         setImagePos({
@@ -42,7 +42,7 @@ function HomePage() {
         <div className="wrapper">
 
             <div className="poistion-relative Herocontainer">
-                <div className="HomeBackground position-absolute w-100 start-0 "
+                <div className="HomeBackground position-absolute w-100   "
                     style={{ transform: `translate(${imagePos.xPos}px,${imagePos.yPos}px) scale(1)` }}
                     onMouseMove={(e) => handlePosition(e)}>
                 </div>

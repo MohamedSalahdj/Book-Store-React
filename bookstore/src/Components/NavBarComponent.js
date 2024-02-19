@@ -1,11 +1,28 @@
 import { Link } from 'react-router-dom';
 
 import './NavBarComponent.css'
-
+import { useEffect, useState } from 'react';
 
 function NavBarComponent() {
+
+    const [scrolling, setScorlling] = useState(false);
+     useEffect(() => {
+        console.log(window)
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScorlling(true);
+            } else {
+                setScorlling(false);
+            }
+            window.addEventListener('scroll', handleScroll);
+
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }}, [scrolling])
     return (<>
-        <nav class="navbar navbar-expand-lg sticky-top  mynavBar  navbar-dark bg-transparent justify-content-center">
+    
+        <nav class={`navbar navbar-expand-lg sticky-top  mynavBar  bg-dark  navbar-dark justify-content-center`}>
             <div class="container-fluid">
                 <button class="navbar-toggler btn-white text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
