@@ -160,7 +160,7 @@ return (
       <img src={book1} style={{"width":"100%","height":"150px"}} className="d-block"/>
     </div>
     <div className="container mb-5">
-        <div className="col-lg-6 col-md-10 col-sm-10 p-4 mt-2 mx-auto border bg-white rounded">
+        <div className="col-lg-6 col-md-10 col-sm-10 p-4 mt-2 mx-auto border bg-white rounded shadow">
             <form onSubmit={handleSubmit}>
                 {/* Names */}
                 <div className="d-flex justify-content-between">
@@ -237,7 +237,7 @@ return (
                 }
                 <button type="submit" className="btn btn-success w-100 btn-form">Register</button>
                 <div className="mt-3 ">
-                    <p className="text-center">Already have an account? <Link to='/login'>Sign in</Link></p>
+                    <p className="text-center">Already have an account? <Link to='/login' className='text-success'>Sign in</Link></p>
                 </div>
             </form>
         </div>
