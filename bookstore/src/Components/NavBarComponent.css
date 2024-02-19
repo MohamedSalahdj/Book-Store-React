@@ -1,6 +1,6 @@
 .mynavBar{
-    background-color: transparent !important;
     color: white !important;
+    opacity: .5;
 }
 a{
     color: white !important;

@@ -40,7 +40,7 @@ const ViewBook = () => {
             <h4>{details.price}$</h4>
 
             <input type="number" value="1" onChange={lol} />
-            <Link to="" className="btn">
+            <Link to="" className="btn1">
               Add To Cart
             </Link>
             <h3>

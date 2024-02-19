@@ -24,12 +24,12 @@ function ClientSelectComponent(){
             <h2 className="text-center mt-5">Join as a client or Publisher</h2>
             <div className="container">
                 <div className="row justify-content-center mt-3 text-center">
-                        <div className="form-check col-lg-4 col-md-5 col-sm-10 me-lg-3 me-md-3 mt-sm-3 user-type" onClick= {(e) => handleRadioSelect(e)} >
+                        <div className="form-check col-lg-4 col-md-5 col-sm-10 me-lg-3 me-md-3 mt-sm-3 user-type  fs-4" onClick= {(e) => handleRadioSelect(e)} >
                                 <input className="form-check-input select-icon" type="radio" name="flexRadioDefault"  value='client' onClick= {(e) => handleRadioSelect(e)}/>
                                     Client
                         </div>
 
-                        <div className="form-check col-lg-4 col-md-5 col-sm-10 me-lg-3 me-md-3 mt-sm-3 user-type" onClick= {(e) => handleRadioSelect(e)}>
+                        <div className="form-check col-lg-4 col-md-5 col-sm-10 me-lg-3 me-md-3 mt-sm-3 user-type  fs-4" onClick= {(e) => handleRadioSelect(e)}>
                             <input className="form-check-input select-icon" type="radio" name="flexRadioDefault"  value='publisher' onClick= {(e) => handleRadioSelect(e)}/>                
                                 Publisher
                         </div>

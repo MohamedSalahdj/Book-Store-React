@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom"
-import MessageErrorComponent from "../../Components/MessageErrorcomponent";
+import MessageErrorComponent from "../Components/MessageErrorcomponent";
+import book1 from '../Images/stack-of-books.png'
+
+
 function RegitserComponent(){
 
     const [registerFormData, setRegisterFormData] = useState({
@@ -138,7 +141,8 @@ function RegitserComponent(){
                 passwordError2: registerFormData.password.trim() === "" ? "Password Field Is Required" : null,
             });
             console.log('after showing error ',formIsValid)
-            
+            console.log(registerFormErrors.passwordError1)
+            console.log(registerFormErrors.passwordError2)
         }
         else if (formIsValid && registerFormErrors.firstNameError == null && registerFormErrors.lastNameError == null && registerFormErrors.emailError == null && registerFormErrors.passwordError1 == null  && registerFormErrors.passwordError2 == null){
             console.log("Register Successfully")
@@ -153,7 +157,7 @@ function RegitserComponent(){
 return (
     <>
     <div className="mt-4 mb-5 mx-auto"  style={{"width":"150px"}}>
-      <img src='stack-of-books.png' style={{"width":"100%","height":"150px"}} className="d-block"/>
+      <img src={book1} style={{"width":"100%","height":"150px"}} className="d-block"/>
     </div>
     <div className="container mb-5">
         <div className="col-lg-6 col-md-10 col-sm-10 p-4 mt-2 mx-auto border bg-white rounded">
