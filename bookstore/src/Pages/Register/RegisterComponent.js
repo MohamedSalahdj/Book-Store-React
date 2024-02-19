@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom"
 import MessageErrorComponent from "../../Components/MessageErrorcomponent";
-import book1 from '../Images/stack-of-books.png'
+import book1 from '../../Images/stack-of-books.png'
 
 
 function RegitserComponent(){
