@@ -50,7 +50,7 @@ function NavBarComponent() {
                             </ul>
                         </li>
                     </ul>
-                    <div class="container-fluid w-25">
+                    <div class="container-fluid w-25 ">
                         <form class="d-flex" role="search">
                             <input class="form-control  form-control-sm me-2 bg-transparent text-white" type="search" placeholder="Search here" aria-label="Search"></input>
                             <button class="btn btn-outline-light " type="submit">Search</button>

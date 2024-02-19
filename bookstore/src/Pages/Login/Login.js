@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import book1 from '../../Images/book-01.png'
 
 import "./Login.css";
 
@@ -86,7 +87,12 @@ function Login() {
   };
 
   return (
+
+    
     <div className="container">
+      <div className="mt-2 mb-5 mx-auto"  style={{"width":"150px"}}>
+          <img src={book1} style={{"width":"100%","height":"150px"}} className="d-block"/>
+      </div>
       <form onSubmit={submitData}>
         <div className="row">
           <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -95,8 +101,6 @@ function Login() {
                 <h5 className="card-title text-center mb-5 fw-light fs-5">
                   Sign In To Our Book Store
                 </h5>
-
-            
                 {successMessage && (
                   <div className="alert alert-success" role="alert">
                     {successMessage}
@@ -153,7 +157,7 @@ function Login() {
     <span style={{ fontSize: '1.2em', marginRight: '8px' }}>
       Create a new account?
     </span>
-    <Link to="/signup" className="btn btn-success btn-sm">
+    <Link to="/register" className="btn btn-success btn-sm">
       Sign up
     </Link>
   </p>
