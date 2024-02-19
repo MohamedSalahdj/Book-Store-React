@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage";
 import NavBarComponent from "./Components/NavBarComponent";
 import ClientSelectComponent from "./Pages/ClientSelect/ClientSelectComponent";
-import RegitserComponent from "./Images/RegisterComponent";
+import RegitserComponent from "./Pages/Register/RegisterComponent";
 import Login from "./Pages/Login/Login";
 import ViewBook from "./Pages/ViewBook/ViewBook";
 
