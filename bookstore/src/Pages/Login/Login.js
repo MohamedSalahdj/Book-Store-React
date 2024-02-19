@@ -153,7 +153,7 @@ function Login() {
     <span style={{ fontSize: '1.2em', marginRight: '8px' }}>
       Create a new account?
     </span>
-    <Link to="/signup" className="btn btn-success btn-sm">
+    <Link to="/register" className="btn btn-success btn-sm">
       Sign up
     </Link>
   </p>
