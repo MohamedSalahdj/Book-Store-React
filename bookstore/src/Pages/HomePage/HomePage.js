@@ -7,6 +7,7 @@ import HomePageBookComponent from "../../Components/HomePageBookComponent"
 import HeroSectionBooksComponent from "../../Components/HeroSectionBooksComponent"
 import { Link } from "react-router-dom"
 function HomePage() {
+
     const [imagePos, setImagePos] = useState({
         xPos: 0,
         yPos: 0
@@ -29,6 +30,7 @@ function HomePage() {
         results: []
 
     })
+    
     useEffect(() => {
         axios.get(`https://api.themoviedb.org/3/movie/popular?language=eng&api_key=da4e0d3bd6b4f860b5788aa43ae24d86`)
             .then((res) => (setPages({
@@ -39,6 +41,7 @@ function HomePage() {
     const getMoviesToSort = [...pages.results]
     const topFourMovies = (getMoviesToSort.sort((a, b) => b.vote_average - a.vote_average)).slice(0, 2)
     const testMovies = pages.results.slice(0, 6)
+
     return (<>
         <div className="wrapper">
 
@@ -60,7 +63,7 @@ function HomePage() {
                         <h2 className="text-white">By: Dr.Ahmed Khalid</h2>
                     </div>
                 </div>
-              
+
             </div>
             <div className="container bookCategContianer    pb-5">
                 <div className="row">
@@ -80,6 +83,7 @@ function HomePage() {
                     }
                 </div>
             </div>
+
             <div className="container bookCategContianer  pb-5">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12 ">
@@ -89,16 +93,18 @@ function HomePage() {
                         <Link><p className="mb-5 mt-5" style={{ color: "#1C8CDE" }}>{`More Children's Non-Fiction>`}</p>	</Link>
                     </div>
                 </div>
-                    <div className="row justify-content-center ">
-                        {
-                            testMovies.map((movie) => {
-                                return (<HomePageBookComponent cardTilte={movie.overview.slice(0, 45) + '...'} cardSrc={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} footer={movie.release_date} id={movie.id}></HomePageBookComponent>)
+                <div className="row justify-content-center ">
+                    {
+                        testMovies.map((movie) => {
+                            return (<HomePageBookComponent cardTilte={movie.overview.slice(0, 45) + '...'} cardSrc={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} footer={movie.release_date} id={movie.id}></HomePageBookComponent>)
 
-                            })
-                        }
-                    </div>
+                        })
+                    }
                 </div>
             </div>
+            
+        </div>
+
     </>)
 }
 
