@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 function NavBarComponent() {
 
     const [scrolling, setScorlling] = useState(false);
-     useEffect(() => {
+    useEffect(() => {
         console.log(window)
         const handleScroll = () => {
             if (window.scrollY > 50) {
@@ -19,9 +19,10 @@ function NavBarComponent() {
             return () => {
                 window.removeEventListener('scroll', handleScroll);
             };
-        }}, [scrolling])
+        }
+    }, [scrolling])
     return (<>
-    
+
         <nav class={`navbar navbar-expand-lg sticky-top  mynavBar  bg-dark  navbar-dark justify-content-center`}>
             <div class="container-fluid">
                 <button class="navbar-toggler btn-white text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +32,9 @@ function NavBarComponent() {
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                         <li class="nav-item">
                             <Link class="nav-link active text-white" aria-current="page" to="/">Home</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/books">Books</Link>
                         </li>
                         <li class="nav-item">
                             <Link class="nav-link" to="/register">Register</Link>
