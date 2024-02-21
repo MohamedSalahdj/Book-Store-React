@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+import logo from './logo.svg';
+import './App.css';
+import My_Rating from "./Components/My_Rating"
+
+function App() {
+  return (
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header>
+    // </div>
+    <My_Rating/>
+=======
 // import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +36,6 @@ import Login from "./Pages/Login/Login";
 import ViewBook from "./Pages/ViewBook/ViewBook";
 import ListBooks from "./Pages/ListBooks/ListBooks";
 import Footer from "./Components/Footer/Footer";
-import My_Rating from "./Components/My_Rating";
 
 function App() {
   return (
@@ -33,6 +57,7 @@ function App() {
         <Footer/>
       </BrowserRouter>
     </>
+>>>>>>> 74e2a5f05bb06684ecd2d1a3cec3309325402c0e
   );
 }
 

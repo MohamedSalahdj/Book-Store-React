@@ -8,15 +8,23 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.3",
+<<<<<<< HEAD
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-bootstrap-icons": "^1.11.3",
+=======
+    "bootstrap-icons": "^1.11.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+>>>>>>> 74e2a5f05bb06684ecd2d1a3cec3309325402c0e
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
-    "react-scroll-up-button": "^1.6.4",
+<<<<<<< HEAD
     "reactstrap": "^9.2.2",
+=======
+    "react-scroll-up-button": "^1.6.4",
+>>>>>>> 74e2a5f05bb06684ecd2d1a3cec3309325402c0e
     "web-vitals": "^2.1.4"
   },
   "scripts": {

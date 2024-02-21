@@ -1,0 +1,36 @@
+
+.myContainer{
+    height: 100vh;
+}
+
+.Herocontainer{
+    height: 95vh;
+    background-color: #1F2229;
+
+}
+.HomeBackground{
+    height: 100vh;
+    background: url('https://canvastemplate.com/demos/writer/images/hero/hero.jpg') center center no-repeat;
+    background-size: cover;
+    transition: transform .3s;
+    top: -1%;
+
+}
+.homeBackgroundImage{
+    overflow: hidden;
+    height: 60vh;
+    width: 100vh;
+    scale: 1.1;
+}
+.latestBooks{
+    height: 50vh;
+    top: 25%;
+    left: -20%;
+}
+.HeroTitle{
+    top: 100%;
+    
+}
+.bookCategContianer{
+    border-bottom: 1px solid black;
+}

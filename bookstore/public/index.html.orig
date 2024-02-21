@@ -27,7 +27,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <!--
->>>>>>> main
+>>>>>>> 74e2a5f05bb06684ecd2d1a3cec3309325402c0e
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -68,7 +68,7 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--
->>>>>>> main
+>>>>>>> 74e2a5f05bb06684ecd2d1a3cec3309325402c0e
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
