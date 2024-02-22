@@ -1,0 +1,129 @@
+/* .publisher-order-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 30px;
+  }
+  
+  h2 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .empty-list {
+    text-align: center;
+    margin-top: 20px;
+    color: #777777;
+  }
+  
+  .order-list {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #ff5722;
+    color: #ffffff;
+  }
+  
+  .order-item {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .order-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+  
+  .btn-orange {
+    background-color: #ff5722;
+    color: #ffffff;
+  }
+  
+  .btn-danger {
+    background-color: #f44336;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  
+  .btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    filter: brightness(90%);
+  }
+   */
+
+   /* .publisher-order-list {
+    background-image: url('https://canvastemplate.com/demos/writer/images/hero/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: #fff;
+  }
+
+  .publisher-order-list h2 {
+    font-family: 'Your Font', sans-serif;
+    font-size: 24px;
+  }
+  .publisher-order-list .empty-list p {
+    color: #777;
+    font-style: italic;
+  }
+  .publisher-order-list .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .publisher-order-list .table th,
+  .publisher-order-list .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .publisher-order-list .table th {
+    font-weight: bold;
+    background-color: #f1f1f1;
+  }
+  
+  .publisher-order-list .table td {
+    color: #555;
+  }
+  
+  .publisher-order-list .order-item:hover {
+    background-color: #f9f9f9;
+  } */
