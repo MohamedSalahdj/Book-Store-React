@@ -3,6 +3,7 @@ import "./ViewBook.css";
 import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { useState } from "react";
 import axios from "axios";
+import Review from "../../Components/Review/Review";
 
 const ViewBook = () => {
   const lol = () => {};
@@ -55,6 +56,7 @@ const ViewBook = () => {
           </div>
         </div>
       </div>
+      <Review/>
     </>
   );
 };

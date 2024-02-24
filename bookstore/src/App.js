@@ -11,7 +11,6 @@ import Login from "./Pages/Login/Login";
 import ViewBook from "./Pages/ViewBook/ViewBook";
 import ListBooks from "./Pages/ListBooks/ListBooks";
 import Footer from "./Components/Footer/Footer";
-import My_Rating from "./Components/My_Rating";
 
 function App() {
   return (

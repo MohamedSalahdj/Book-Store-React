@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import "./ListBooksCard.css"
+// import "./ListBooksCard.css"
 
 function ListBooksCard(props) {
 
     return (
-        <>
-
             <div className="card m-1 bg-transparent pt-3 shadow " style={{ width: "12rem" }} id={props.id}>
 
                 <Link to={`/movie/${props.id}`}>
@@ -44,7 +42,6 @@ function ListBooksCard(props) {
                     </li>
                 </ul>
             </div>
-        </>
     )
 }
 export default ListBooksCard;
