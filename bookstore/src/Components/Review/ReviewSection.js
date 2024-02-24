@@ -11,8 +11,8 @@ function ReviewSection() {
   </head>
     <div className="container">
     {/* Review card rendering */}
-    <div className=' container mb-3 fs-3'>Reviews</div>
-    <ReviewCard date={"09-22-2012"} rate={4} user={"alaa khaled"}  review={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum sed beatae saepe adipisci. Corporis."}/>
+  {/*<div className=' container mb-3 fs-3'>Reviews</div>
+    <ReviewCard date={"09-22-2012"} rate={4} user={"alaa khaled"}  review={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum sed beatae saepe adipisci. Corporis."}/>*/}
       <div>There are no reviews yet</div>
       <div className="container border-5">
         <div className="fs-3">
