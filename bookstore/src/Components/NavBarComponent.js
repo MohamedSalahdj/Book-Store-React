@@ -42,6 +42,9 @@ function NavBarComponent() {
                         <li class="nav-item">
                             <Link class="nav-link" to="/login">login</Link>
                         </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/dashboard">Dashboard</Link>
+                        </li>
                         <li class="nav-item dropdown">
                             <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categories

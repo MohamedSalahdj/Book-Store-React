@@ -11,6 +11,7 @@ import Login from "./Pages/Login/Login";
 import ViewBook from "./Pages/ViewBook/ViewBook";
 import ListBooks from "./Pages/ListBooks/ListBooks";
 import Footer from "./Components/Footer/Footer";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
           />
           <Route exact path={"/login"} component={Login} />
           <Route exact path={"/details/:id"} component={ViewBook} />
+          <Route exact path={"/dashboard"} component={Dashboard} />
         </Switch>
-        <Footer/>
+        {/* <Footeer/> */}
       </BrowserRouter>
     </>
   );
