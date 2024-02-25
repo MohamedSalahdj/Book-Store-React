@@ -156,6 +156,7 @@ function RegitserComponent(){
 
 return (
     <>
+  
     <div className="mt-4 mb-5 mx-auto"  style={{"width":"150px"}}>
       <img src={book1} style={{"width":"100%","height":"150px"}} className="d-block"/>
     </div>

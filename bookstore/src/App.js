@@ -10,6 +10,8 @@ import RegitserComponent from "./Pages/Register/RegisterComponent";
 import Login from "./Pages/Login/Login";
 import ViewBook from "./Pages/ViewBook/ViewBook";
 import CartPage from "./Pages/PublisherOrder/PunlisherOrderlList";
+import ListBooks from "./Pages/ListBooks/ListBooks";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <NavBarComponent></NavBarComponent>
         <Switch>
           <Route exact path={"/"} component={HomePage} />
+          <Route exact path={"/books"} component={ListBooks} />
           <Route exact path={"/register"} component={ClientSelectComponent} />
           <Route
             exact
@@ -28,6 +31,7 @@ function App() {
           <Route exact path={"/details/:id"} component={ViewBook} />
           <Route exact path={"/publisherorder"} component={CartPage} />
         </Switch>
+        <Footer/>
       </BrowserRouter>
     </>
   );

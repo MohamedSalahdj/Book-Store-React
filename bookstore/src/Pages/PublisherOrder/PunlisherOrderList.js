@@ -1,11 +1,100 @@
 
+// import React, { useState, useEffect } from 'react';
+// import './PublisherOrderList.css';
+
+// function PublisherOrderList() {
+//   const [orders, setOrders] = useState([]);
+
+//   useEffect(() => {
+//     // Fetch data from your API endpoint
+//     fetch('https://api.mollie.com/v2/orders')
+//       .then((response) => response.json())
+//       .then((data) => setOrders(data))
+//       .catch((error) => console.error('Error fetching data:', error));
+//   }, []); // Empty dependency array ensures the effect runs only once on component mount
+
+//   return (
+//     <div className="publisher-order-list">
+//       <div className="container">
+//         <h2 className="my-4">Publisher Orders</h2>
+
+//         {orders.length === 0 ? (
+//           <div className="empty-list">
+//             <p>No orders available.</p>
+//           </div>
+//         ) : (
+//           <div className="order-list">
+//             <table className="table">
+//               <thead>
+//                 <tr>
+//                   <th>Order ID</th>
+//                   <th>Product</th>
+//                   <th>Price</th>
+//                   <th>Quantity</th>
+//                   <th>Total Price</th>
+//                   <th>Order Date</th>
+//                   <th>Status</th>
+//                 </tr>
+//               </thead>
+//               <tbody>
+//                 {orders.map((order) => (
+//                   <tr key={order.id} className="order-item">
+//                     <td>{order.id}</td>
+//                     <td>{order.BookName}</td>
+//                     <td>${order.price}</td>
+//                     <td>{order.quantity}</td>
+//                     <td>${order.totalPrice}</td>
+//                     <td>{order.orderDate}</td>
+//                     <td>{order.status}</td>
+//                   </tr>
+//                 ))}
+//               </tbody>
+//             </table>
+//           </div>
+//         )}
+
+//         <div className="cta-buttons">
+//           <button className="btn btn-danger">Approve Order</button>
+//           <button className="btn btn-orange">Disapprove</button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default PublisherOrderList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 import './PublisherOrderList.css';
 
-const PublisherOrderList = () => {
+function PublisherOrderList() {
   const orders = [
     {
       id: 1,
@@ -191,7 +280,7 @@ const PublisherOrderList = () => {
               </thead>
               <tbody>
                 {orders.map((order) => (
-                  <tr key={order.id} className="order-item">
+                  <tr  className="order-item">
                     <td>{order.id}</td>
                     <td>{order.productName}</td>
                     <td>${order.price}</td>
@@ -217,3 +306,4 @@ const PublisherOrderList = () => {
 };
 
 export default PublisherOrderList;
+
