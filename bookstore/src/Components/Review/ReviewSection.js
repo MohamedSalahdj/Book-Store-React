@@ -1,19 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import { Col, Row } from "react-bootstrap";
-import ReviewCard from "./reviewCard";
+import {useState } from "react";
 
 function ReviewSection() {
   const [rate, setRate] = useState(null);
   const [hover,setHover]=useState(null);
   return (<>
-  <head>
-<link rel="stylesheet" href="./review.css"/>
-  </head>
     <div className="container">
     {/* Review card rendering */}
-    <div className=' container mb-3 fs-3'>Reviews</div>
-    <ReviewCard date={"09-22-2012"} rate={4} user={"alaa khaled"}  review={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum sed beatae saepe adipisci. Corporis."}/>
-      <div>There are no reviews yet</div>
+    {/* <div className=' container mb-3 fs-3'>Reviews</div>
+    <ReviewCard date={"09-22-2012"} rate={4} user={"alaa khaled"}  review={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum sed beatae saepe adipisci. Corporis."}/> */}
       <div className="container border-5">
         <div className="fs-3">
           Be the first to review "the sons of the Empire"
@@ -47,8 +41,8 @@ function ReviewSection() {
             style={{ width: "100%", resize: "none" }}
           ></textarea>
         </div>
-        <Row className="mt-3">
-          <Col lg={6}>
+        <div className="row mt-3">
+          <div className="col-lg-6">
             Name *
             <textarea
               className="d-block"
@@ -56,8 +50,8 @@ function ReviewSection() {
               cols="50"
               style={{ width: "100%", resize: "none" }}
             ></textarea>
-          </Col>
-          <Col lg={6}>
+          </div>
+          <div className="col-lg-6">
             Email *
             <textarea
               className="d-block"
@@ -65,8 +59,8 @@ function ReviewSection() {
               cols="50"
               style={{ width: "100%", resize: "none" }}
             ></textarea>
-          </Col>
-        </Row>
+          </div>
+        </div>
         <div className="d-inline-flex mt-3">
           <input type="checkbox" id="SaveData" className="d-inline" />
           <label htmlFor="SaveData" className="ms-1 fs-6 d-inline">

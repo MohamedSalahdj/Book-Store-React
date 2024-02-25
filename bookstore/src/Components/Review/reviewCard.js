@@ -33,8 +33,8 @@ function ReviewCard(props) {
                 <i
                   className={
                     currentRating <= props.rate
-                      ? "mb-1 setcusor bi bi-star-fill"
-                      : "bi bi-star mb-1 setcusor"
+                      ? "mb-1 bi bi-star-fill"
+                      : "bi bi-star mb-1 "
                   }
                 ></i>
               );
