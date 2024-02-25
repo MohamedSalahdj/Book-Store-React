@@ -1,0 +1,61 @@
+:root {
+  --primary: #4d3bc6;
+  --secondray: #5f4ecb;
+}
+
+.cool-text {
+  color: var(--primary);
+}
+
+.filled-button {
+  display: inline-block;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.filled-button:hover {
+  background-color: var(--secondray);
+}
+
+.outline-button {
+  display: inline-block;
+  border: var(--secondray);
+  border-style: solid;
+  border-width: 1px;
+  color: var(--secondray);
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.outline-button:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.my-card {
+  transition: transform 0.5s;
+}
+
+.my-card:hover {
+  transform: translateY(-5px);
+}
+
+.viewbook-input {
+  width: 60px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--secondray);
+}
+
+.viewbook-input:focus {
+  outline: none;
+}
