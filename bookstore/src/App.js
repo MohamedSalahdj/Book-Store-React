@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBarComponent></NavBarComponent>
+        <NavBar/>
         <Switch>
           <Route exact path={"/"} component={HomePage} />
           <Route exact path={"/books"} component={ListBooks} />
@@ -29,7 +29,7 @@ function App() {
             component={RegitserComponent}
           />
           <Route exact path={"/login"} component={Login} />
-          <Route exact path={"/details/:id"} component={ViewBook} />
+          {/* <Route exact path={"/details/:id"} component={ViewBook} /> */}
           <Route exact path={'/publisher/addbook'} component= {PublishABook}></Route>
         </Switch>
         <Footer/>
