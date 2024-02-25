@@ -41,7 +41,6 @@ function HomePage() {
     const getMoviesToSort = [...pages.results]
     const topFourMovies = (getMoviesToSort.sort((a, b) => b.vote_average - a.vote_average)).slice(0, 2)
     const testMovies = pages.results.slice(0, 6)
-
     return (<>
         <div className="wrapper">
 

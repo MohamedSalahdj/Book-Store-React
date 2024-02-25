@@ -11,6 +11,7 @@ import Login from "./Pages/Login/Login";
 import ViewBook from "./Pages/ViewBook/ViewBook";
 import ListBooks from "./Pages/ListBooks/ListBooks";
 import Footer from "./Components/Footer/Footer";
+import PublishABook from "./Pages/PublishABook/PublishABook";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           />
           <Route exact path={"/login"} component={Login} />
           <Route exact path={"/details/:id"} component={ViewBook} />
+          <Route exact path={'/publisher/addbook'} component= {PublishABook}></Route>
         </Switch>
         <Footer/>
       </BrowserRouter>
