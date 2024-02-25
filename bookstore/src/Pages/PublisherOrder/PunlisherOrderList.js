@@ -2,18 +2,6 @@
 import React from 'react';
 import './PublisherOrderList.css';
 import book1 from '../../Images/book-01.png';
-
-
-
-
-
-
-
-
-
-
-
-
 function PublisherOrderList() {
   const orders = [
     {
@@ -162,7 +150,7 @@ function PublisherOrderList() {
       price: 25.0,
       quantity: 1,
       totalPrice: 25.0,
-      orderDate: '2024-04-15',
+      orderDate: '2024-06-1',
       status: 'Processing',
     
     },
@@ -171,53 +159,47 @@ function PublisherOrderList() {
   
 
 return(
+  <div className="container mt-4">
+  <h2>Publisher Orders</h2>
   <div>
-  <div className="container">
-    <h2 className="my-4">Publisher Orders</h2>
-
-    <div>
-      <table className="table table-striped table-bordered">
-        <thead className="thead-dark">
-          <tr>
-            <th>ID</th>
-            <th></th>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total Price</th>
-            <th>Order Date</th>
-            <th>Status</th>
-            <th>Actions</th>
+    <table className="table table-striped table-bordered bg-white">
+      <thead className="bg-success">
+        <tr>
+          <th>ID</th>
+          <th></th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Order Date</th>
+          <th>Status</th>
+      
+        </tr>
+      </thead>
+      <tbody>
+        {orders.map((order) => (
+          <tr key={order.id}>
+            <td>{order.id}</td>
+            <td>
+              <img
+                src={book1}
+                alt={order.productName}
+                className="order-image"
+              />
+            </td>
+            <td>{order.productName}</td>
+            <td>${order.price}</td>
+            <td>{order.quantity}</td>
+            <td>${order.totalPrice}</td>
+            <td>{order.orderDate}</td>
+            <td>
+              {order.status}
+            </td>
+            
           </tr>
-        </thead>
-        <tbody>
-          {orders.map((order) => (
-            <tr key={order.id}>
-              <td>{order.id}</td>
-              <td>
-                <img
-                  src={book1}
-                  alt={order.productName}
-                  className="order-image"
-                />
-              </td>
-              <td>{order.productName}</td>
-              <td>${order.price}</td>
-              <td>{order.quantity}</td>
-              <td>${order.totalPrice}</td>
-              <td>{order.orderDate}</td>
-              <td >
-                {order.status}
-              </td>
-              <td>
-                <button className="btn btn-danger">Approve</button>
-                <button className="btn btn-orange">Disapprove</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+        ))}
+      </tbody>
+    </table>
   </div>
 </div>
 );

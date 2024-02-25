@@ -1,0 +1,37 @@
+
+
+.table-clear {
+
+  margin-top: 100px;
+}
+
+.table-clear th, .table-clear td {
+  padding: 40px;
+  text-align: center;
+}
+
+.table-clear tbody td img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+
+.order-image {
+  width: 50px; 
+  height: auto;
+}
+
+.table th:first-child, .table td:first-child {
+  text-align: center;
+}
+
+.table thead tr {
+  background-color: #f8f9fa;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+
