@@ -9,7 +9,7 @@ import ClientSelectComponent from "./Pages/ClientSelect/ClientSelectComponent";
 import RegitserComponent from "./Pages/Register/RegisterComponent";
 import Login from "./Pages/Login/Login";
 import ViewBook from "./Pages/ViewBook/ViewBook";
-import CartPage from "./Pages/PublisherOrder/PunlisherOrderlList";
+import PublisherOrderList from "./Pages/PublisherOrder/PunlisherOrderList";
 import ListBooks from "./Pages/ListBooks/ListBooks";
 import Footer from "./Components/Footer/Footer";
 
@@ -29,7 +29,7 @@ function App() {
           />
           <Route exact path={"/login"} component={Login} />
           <Route exact path={"/details/:id"} component={ViewBook} />
-          <Route exact path={"/publisherorder"} component={CartPage} />
+          <Route exact path={"/publisherorder"} component={PublisherOrderList} />
         </Switch>
         <Footer/>
       </BrowserRouter>
