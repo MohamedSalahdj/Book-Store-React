@@ -1,309 +1,231 @@
 
-// import React, { useState, useEffect } from 'react';
-// import './PublisherOrderList.css';
-
-// function PublisherOrderList() {
-//   const [orders, setOrders] = useState([]);
-
-//   useEffect(() => {
-//     // Fetch data from your API endpoint
-//     fetch('https://api.mollie.com/v2/orders')
-//       .then((response) => response.json())
-//       .then((data) => setOrders(data))
-//       .catch((error) => console.error('Error fetching data:', error));
-//   }, []); // Empty dependency array ensures the effect runs only once on component mount
-
-//   return (
-//     <div className="publisher-order-list">
-//       <div className="container">
-//         <h2 className="my-4">Publisher Orders</h2>
-
-//         {orders.length === 0 ? (
-//           <div className="empty-list">
-//             <p>No orders available.</p>
-//           </div>
-//         ) : (
-//           <div className="order-list">
-//             <table className="table">
-//               <thead>
-//                 <tr>
-//                   <th>Order ID</th>
-//                   <th>Product</th>
-//                   <th>Price</th>
-//                   <th>Quantity</th>
-//                   <th>Total Price</th>
-//                   <th>Order Date</th>
-//                   <th>Status</th>
-//                 </tr>
-//               </thead>
-//               <tbody>
-//                 {orders.map((order) => (
-//                   <tr key={order.id} className="order-item">
-//                     <td>{order.id}</td>
-//                     <td>{order.BookName}</td>
-//                     <td>${order.price}</td>
-//                     <td>{order.quantity}</td>
-//                     <td>${order.totalPrice}</td>
-//                     <td>{order.orderDate}</td>
-//                     <td>{order.status}</td>
-//                   </tr>
-//                 ))}
-//               </tbody>
-//             </table>
-//           </div>
-//         )}
-
-//         <div className="cta-buttons">
-//           <button className="btn btn-danger">Approve Order</button>
-//           <button className="btn btn-orange">Disapprove</button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default PublisherOrderList;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
-
-
 import './PublisherOrderList.css';
+import book1 from '../../Images/book-01.png';
+
+
+
+
+
+
+
+
+
+
+
 
 function PublisherOrderList() {
   const orders = [
     {
       id: 1,
-      productName: 'Book 1',
-      price: 20.0,
-      quantity: 2,
-      totalPrice: 40.0,
-      orderDate: '2024-03-01',
-      status: 'Shipped',
+      productName: 'Adventure Book',
+      price: 70.0,
+      quantity: 3,
+      totalPrice: 210.0,
+      orderDate: '2024-02-10',
+      status: 'Processing',
+     
     },
     {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },    {
-        id: 1,
-        productName: 'Book 1',
-        price: 20.0,
-        quantity: 2,
-        totalPrice: 40.0,
-        orderDate: '2024-03-01',
-        status: 'Shipped',
-      },
-    {
       id: 2,
-      productName: 'Book 2',
+      productName: 'Science Fiction Novel',
+      price: 50.0,
+      quantity: 2,
+      totalPrice: 100.0,
+      orderDate: '2024-02-15',
+      status: 'Delivered',
+     
+    },
+    {
+      id: 3,
+      productName: 'Adventure Book',
+      price: 150.0,
+      quantity: 1,
+      totalPrice: 150.0,
+      orderDate: '2024-02-20',
+      status: 'Shipped',
+      
+    },
+    {
+      id: 4,
+      productName: 'Historical Fiction',
+      price: 200.0,
+      quantity: 4,
+      totalPrice: 800.0,
+      orderDate: '2024-02-25',
+      status: 'Processing',
+
+    },
+    {
+      id: 5,
+      productName: 'Adventure Book',
+      price: 80.0,
+      quantity: 2,
+      totalPrice: 160.0,
+      orderDate: '2024-03-01',
+      status: 'Shipped',
+      
+    },
+    {
+      id: 6,
+      productName: 'Biography',
+      price: 150.0,
+      quantity: 1,
+      totalPrice: 300.0,
+      orderDate: '2024-03-05',
+      status: 'Delivered',
+   
+    },
+    {
+      id: 7,
+      productName: 'Adventure Book',
+      price: 120.0,
+      quantity: 3,
+      totalPrice: 360.0,
+      orderDate: '2024-03-10',
+      status: 'Processing',
+     
+    },
+    {
+      id: 8,
+      productName: 'Adventure Book',
+      price: 90.0,
+      quantity: 2,
+      totalPrice: 170.0,
+      orderDate: '2024-03-15',
+      status: 'Shipped',
+   
+    },
+    {
+      id: 9,
+      productName: 'Cookbook',
+      price: 120.0,
+      quantity: 1,
+      totalPrice: 120.0,
+      orderDate: '2024-03-20',
+      status: 'Delivered',
+   
+    },
+    {
+      id: 10,
+      productName: 'Business and Finance',
+      price: 120.0,
+      quantity: 2,
+      totalPrice: 240.0,
+      orderDate: '2024-03-25',
+      status: 'Processing',
+   
+    },
+    {
+      id: 11,
+      productName: 'Art and Photography',
+      price: 70.0,
+      quantity: 1,
+      totalPrice: 140.0,
+      orderDate: '2024-03-30',
+      status: 'Shipped',
+
+    },
+    {
+      id: 12,
+      productName: 'Travel Guide',
+      price: 180.0,
+      quantity: 3,
+      totalPrice: 540.0,
+      orderDate: '2024-04-01',
+      status: 'Processing',
+    
+    },
+    {
+      id: 13,
+      productName: 'Science and Nature',
+      price: 30.0,
+      quantity: 2,
+      totalPrice: 60.0,
+      orderDate: '2024-04-05',
+      status: 'Delivered',
+  
+    },
+    {
+      id: 14,
+      productName: 'Children\'s Book',
+      price: 18.0,
+      quantity: 4,
+      totalPrice: 72.0,
+      orderDate: '2024-04-10',
+      status: 'Shipped',
+     
+    },
+    {
+      id: 15,
+      productName: 'Educational Textbook',
       price: 25.0,
       quantity: 1,
       totalPrice: 25.0,
-      orderDate: '2024-03-02',
+      orderDate: '2024-04-15',
       status: 'Processing',
+    
     },
     
-    // Add more orders as needed
   ];
+  
 
-  return (
-    <div className="publisher-order-list">
-      <div className="container">
-        <h2 className="my-4">Publisher Orders</h2>
+return(
+  <div>
+  <div className="container">
+    <h2 className="my-4">Publisher Orders</h2>
 
-        {orders.length === 0 ? (
-          <div className="empty-list">
-            <p>No orders available.</p>
-          </div>
-        ) : (
-          <div className="order-list">
-            <table className="table">
-              <thead>
-                <tr>
-                  <th>Order ID</th>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total Price</th>
-                  <th>Order Date</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {orders.map((order) => (
-                  <tr  className="order-item">
-                    <td>{order.id}</td>
-                    <td>{order.productName}</td>
-                    <td>${order.price}</td>
-                    <td>{order.quantity}</td>
-                    <td>${order.totalPrice}</td>
-                    <td>{order.orderDate}</td>
-                    <td>{order.status}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-
-        <div className="cta-buttons">
-       
-          <button className="btn btn-danger">Approve Order</button>
-          <button className="btn btn-orange">Disapprove</button>
-        </div>
-      </div>
+    <div>
+      <table className="table table-striped table-bordered">
+        <thead className="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Order Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {orders.map((order) => (
+            <tr key={order.id}>
+              <td>{order.id}</td>
+              <td>
+                <img
+                  src={book1}
+                  alt={order.productName}
+                  className="order-image"
+                />
+              </td>
+              <td>{order.productName}</td>
+              <td>${order.price}</td>
+              <td>{order.quantity}</td>
+              <td>${order.totalPrice}</td>
+              <td>{order.orderDate}</td>
+              <td >
+                {order.status}
+              </td>
+              <td>
+                <button className="btn btn-danger">Approve</button>
+                <button className="btn btn-orange">Disapprove</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  );
-};
+  </div>
+</div>
+);
+}
+
+
 
 export default PublisherOrderList;
+
+
 
