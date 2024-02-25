@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import book1 from '../../Images/book-01.png'
+import { Link } from "react-router-dom";
+import book1 from "../../Images/book-01.png";
 
 import "./Login.css";
 
@@ -18,7 +18,8 @@ function Login() {
   const [successMessage, setSuccessMessage] = useState("");
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  const passwordRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
   const ChangeuserData = (e) => {
     const { name, value } = e.target;
@@ -75,7 +76,6 @@ function Login() {
           "Password should be at least 8 characters long, contain at least one lowercase letter, one uppercase letter, one digit, and one special character.",
       }));
     } else {
-
       setSuccessMessage("Login successful!");
 
       // Clearing any previous error messages
@@ -87,11 +87,14 @@ function Login() {
   };
 
   return (
-
-    
     <div className="container">
-      <div className="mt-2 mb-5 mx-auto"  style={{"width":"150px"}}>
-          <img src={book1} style={{"width":"100%","height":"150px"}} className="d-block"/>
+      <div className="mt-2 mb-5 mx-auto" style={{ width: "150px" }}>
+        <img
+          src={book1}
+          style={{ width: "100%", height: "150px" }}
+          className="d-block"
+          alt="books"
+        />
       </div>
       <form onSubmit={submitData}>
         <div className="row">
@@ -138,14 +141,12 @@ function Login() {
                   />
                   <label htmlFor="floatingPassword">Password</label>
                   {formError.password && (
-                    <div className="invalid-feedback">
-                      {formError.password}
-                    </div>
+                    <div className="invalid-feedback">{formError.password}</div>
                   )}
                 </div>
                 <div className="d-grid">
                   <button
-                    className="btn btn-success btn-login text-uppercase fw-bold"
+                    className="filled-button text-uppercase fw-bold"
                     type="submit"
                   >
                     Sign in
@@ -153,16 +154,15 @@ function Login() {
                   <hr className="my-4" />
 
                   <div className="mt-3 text-center">
-  <p>
-    <span style={{ fontSize: '1.2em', marginRight: '8px' }}>
-      Create a new account?
-    </span>
-    <Link to="/register" className="btn btn-success btn-sm">
-      Sign up
-    </Link>
-  </p>
-</div>
-
+                    <p>
+                      <span style={{ fontSize: "1.2em", marginRight: "8px" }}>
+                        Create a new account?
+                      </span>
+                      <Link to="/register" className="filled-button">
+                        Sign up
+                      </Link>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
