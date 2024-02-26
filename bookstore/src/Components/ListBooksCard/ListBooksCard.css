@@ -1,80 +1,78 @@
 .Img {
-    transition: transform 1s;
-    overflow: hidden;
+  transition: transform 1s;
+  overflow: hidden;
 }
 
 .Img:hover {
-    transform: scale(1.1);
-    overflow: hidden;
+  transform: scale(1.1);
+  overflow: hidden;
 }
 
 .heart-top {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    font-size: 18px;
-    text-decoration: none;
-    color: gray;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 20%;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: gray;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 20%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .heart-top:hover {
-    background-color: #27ae60;
-    color: #ffffff;
+  background-color: #27ae60;
+  color: #ffffff;
 }
 
 .rating {
-    position: absolute;
-    top: 237px;
-    right: 133px;
-    font-size: 10px;
-    text-decoration: none;
-    color: gray;
-    background-color: #fff;
-    padding: 4px;
-    border-radius: 30px;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
+  position: absolute;
+  top: 237px;
+  right: 133px;
+  font-size: 10px;
+  text-decoration: none;
+  color: gray;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 30px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .cart-down {
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #C12748;
-    padding: 5px;
-    border-radius: 20%;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #c12748;
+  padding: 5px;
+  border-radius: 20%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .cart-down:hover {
-    background-color: #27ae60;
-    color: #ffffff;
+  background-color: #27ae60;
+  color: #ffffff;
 }
 
 .price {
-    font-size: 16px;
-    text-decoration: none;
-    color: rgb(43, 42, 42);
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(43, 42, 42);
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .card {
@@ -84,14 +82,20 @@
     font-family: arial;
     overflow: hidden;
 } */
+.card {
+  max-height: 380px;
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  overflow: hidden;
+}
 
 .card-body {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .card-title p {
-
-    font-size: 17px;
-    font-weight: bold;
-    color: rgb(46, 44, 44);
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(46, 44, 44);
 }

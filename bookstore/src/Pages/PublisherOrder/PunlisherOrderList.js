@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './PublisherOrderList.css';
 import book1 from '../../Images/book-01.png';
@@ -208,6 +207,3 @@ return(
 
 
 export default PublisherOrderList;
-
-
-
