@@ -1,26 +1,18 @@
 
-
-
-
-
-
-
-
 .order-image {
-  width: 50px; 
+  width: 70px; 
   height: auto;
 }
 
-.table th:first-child, .table td:first-child {
-  text-align: center;
+.container {
+  padding: 20px;
 }
 
-.table thead tr {
-  background-color: #f8f9fa;
+table {
+  margin: auto;
 }
 
-.table td {
-  vertical-align: middle;
+th, td {
+  font-size: 20px; 
 }
-
 

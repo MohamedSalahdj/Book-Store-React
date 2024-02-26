@@ -17,6 +17,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
+    "react-paginate": "^8.2.0",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "react-scroll-up-button": "^1.6.4",

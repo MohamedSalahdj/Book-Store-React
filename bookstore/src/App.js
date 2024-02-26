@@ -35,6 +35,9 @@ function App() {
               component={RegitserComponent}
             />
             <Route exact path={"/login"} component={Login} />
+            <Route exact path={"/publisherorder"} component={PublisherOrderList} />
+            
+
             {/* <Route exact path={"/details/:id"} component={ViewBook} /> */}
           </Switch>
         </div>
