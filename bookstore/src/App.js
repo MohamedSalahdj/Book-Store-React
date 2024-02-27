@@ -9,6 +9,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import ClientSelectComponent from "./Pages/ClientSelect/ClientSelectComponent";
 import RegitserComponent from "./Pages/Register/RegisterComponent";
 import Login from "./Pages/Login/Login";
+import DatatablePage from "./Pages/PublisherOrder/try";
 
 import PublisherOrderList from "./Pages/PublisherOrder/PunlisherOrderList";
 
@@ -36,6 +37,7 @@ function App() {
             />
             <Route exact path={"/login"} component={Login} />
             <Route exact path={"/publisherorder"} component={PublisherOrderList} />
+            <Route exact path={"/table"} component={DatatablePage} />
             
 
             {/* <Route exact path={"/details/:id"} component={ViewBook} /> */}

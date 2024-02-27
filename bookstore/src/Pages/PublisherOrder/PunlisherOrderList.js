@@ -2,13 +2,19 @@
 import React from 'react';
 import './PublisherOrderList.css';
 import book1 from '../../Images/book-01.png';
-
+import book2 from '../../Images/book-02.png';
+import book3 from '../../Images/book.png';
+import book4 from '../../Images/book5.jpg';
+import book5 from '../../Images/book4.jpeg';
+import book6 from '../../Images/book6.jpeg';
+import book7 from '../../Images/book8.jpeg';
 
 function PublisherOrderList() {
   const orders = [
     
       {
         id: 1,
+        image:book1,
         productName: 'Adventure Book',
         price: 70.0,
         quantity: 3,
@@ -19,6 +25,7 @@ function PublisherOrderList() {
       },
       {
         id: 2,
+        image:book5,
         productName: 'Science Fiction Novel',
         price: 50.0,
         quantity: 2,
@@ -29,6 +36,7 @@ function PublisherOrderList() {
       },
       {
         id: 3,
+        image:book2,
         productName: 'Adventure Book',
         price: 150.0,
         quantity: 1,
@@ -39,6 +47,7 @@ function PublisherOrderList() {
       },
       {
         id: 4,
+        image:book4,
         productName: 'Historical Fiction',
         price: 200.0,
         quantity: 4,
@@ -49,6 +58,7 @@ function PublisherOrderList() {
       },
       {
         id: 5,
+        image:book3,
         productName: 'Adventure Book',
         price: 80.0,
         quantity: 2,
@@ -59,6 +69,7 @@ function PublisherOrderList() {
       },
       {
         id: 6,
+        image:book6,
         productName: 'Biography',
         price: 150.0,
         quantity: 1,
@@ -69,6 +80,7 @@ function PublisherOrderList() {
       },
       {
         id: 7,
+        image:book5,
         productName: 'Adventure Book',
         price: 120.0,
         quantity: 3,
@@ -79,6 +91,7 @@ function PublisherOrderList() {
       },
       {
         id: 8,
+        image:book7,
         productName: 'Adventure Book',
         price: 90.0,
         quantity: 2,
@@ -89,6 +102,7 @@ function PublisherOrderList() {
       },
       {
         id: 9,
+        image:book1,
         productName: 'Cookbook',
         price: 120.0,
         quantity: 1,
@@ -99,6 +113,7 @@ function PublisherOrderList() {
       },
       {
         id: 10,
+        image:book1,
         productName: 'Business and Finance',
         price: 120.0,
         quantity: 2,
@@ -109,6 +124,7 @@ function PublisherOrderList() {
       },
       {
         id: 11,
+        image:book1,
         productName: 'Art and Photography',
         price: 70.0,
         quantity: 1,
@@ -119,6 +135,7 @@ function PublisherOrderList() {
       },
       {
         id: 12,
+        image:book1,
         productName: 'Travel Guide',
         price: 180.0,
         quantity: 3,
@@ -129,6 +146,7 @@ function PublisherOrderList() {
       },
       {
         id: 13,
+        image:book1,
         productName: 'Science and Nature',
         price: 30.0,
         quantity: 2,
@@ -139,6 +157,7 @@ function PublisherOrderList() {
       },
       {
         id: 14,
+        image:book1,
         productName: 'Children\'s Book',
         price: 18.0,
         quantity: 4,
@@ -149,6 +168,7 @@ function PublisherOrderList() {
       },
       {
         id: 15,
+        image:book1,
         productName: 'Educational Textbook',
         price: 25.0,
         quantity: 1,
@@ -184,7 +204,7 @@ function PublisherOrderList() {
                 <td>{order.id}</td>
                 <td>
                   <img
-                    src={book1}
+                    src={order.image}
                     alt={order.productName}
                     className="order-image"
                   />
