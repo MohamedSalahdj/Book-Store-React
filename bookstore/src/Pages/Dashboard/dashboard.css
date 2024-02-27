@@ -1,0 +1,25 @@
+.book-img {
+    position: relative;
+}
+
+
+.book-img::after {
+    content: "$45";
+    position: absolute;
+    top: -2px;
+    right: -16px;
+    color: #469d1c;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 39%;
+    border-radius: 17px;
+    text-align: start;
+    font-size: 1.1rem;
+    transform: rotate(90%);
+}
+
+.book-arrow {
+    right: 5px;
+    top: 45%;
+    cursor: pointer;
+}
